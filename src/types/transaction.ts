@@ -1,4 +1,4 @@
-import { Meta } from "./meta";
+import { Meta } from './meta';
 
 export enum Category {
   Food = 'food',
@@ -17,5 +17,17 @@ export interface Transaction {
 }
 
 export interface TransactionsResponse extends Meta {
-  data?: Transaction[]
+  data?: Transaction[];
+}
+
+export interface Filters {
+  category?: string;
+  sort?: string;
+}
+
+export interface ApiResponse {
+  data: Transaction[];
+  total: number;
+  page: number;
+  pageSize: number;
 }
