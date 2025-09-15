@@ -1,4 +1,3 @@
-// src/mocks/handlers.ts
 import { http, HttpResponse } from 'msw';
 import { TransactionsResponse } from '../types/transaction';
 import { transactions } from './data';
@@ -13,7 +12,7 @@ export const handlers = [
     const sort = url.searchParams.get('sort') || 'date_desc';
 
     let filtered = [...transactions];
-    if (category) filtered = filtered.filter(t => t.category === category);
+    if (category) filtered = filtered.filter((t) => t.category === category);
 
     if (sort === 'date_asc') {
       filtered.sort(
