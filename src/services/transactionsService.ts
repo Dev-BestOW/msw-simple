@@ -3,8 +3,8 @@ import instance from '../utils/http';
 
 const url = '/transactions';
 
-export class TransactionService {
-  async get(filters: Filters) {
+export default class TransactionService {
+  static async getData(filters: Filters) {
     const res = await instance.get(url, { params: filters });
     return res.data;
   }
