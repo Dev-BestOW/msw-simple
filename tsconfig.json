@@ -1,6 +1,9 @@
 {
   "extends": "./tsconfig.app.json",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": ["vitest/globals"]
   }
 }
