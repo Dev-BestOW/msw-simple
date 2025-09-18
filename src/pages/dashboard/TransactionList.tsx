@@ -1,4 +1,4 @@
-import { Transaction } from '../types/transaction';
+import { Transaction } from '../../types/transaction';
 
 type Props = { data: Transaction[]; total: number };
 

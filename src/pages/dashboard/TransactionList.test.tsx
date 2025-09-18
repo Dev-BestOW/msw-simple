@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import TransactionList from './TransactionList';
 import { describe, it, expect } from 'vitest';
-import { Category, Transaction } from '../types/transaction';
+import { Category, Transaction } from '../../types/transaction';
 
 const mockData: Transaction[] = [
   {

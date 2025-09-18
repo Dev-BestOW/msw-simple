@@ -1,6 +1,6 @@
 import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { Transaction } from '../types/transaction';
+import { Transaction } from '../../types/transaction';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 

@@ -1,3 +1,9 @@
-import { getTransactions } from './transactions';
+import {
+  getTransactions,
+  // secureGetTransctions,
+} from './transactions';
 
-export const handlers = [getTransactions];
+export const handlers = [
+  getTransactions,
+  // secureGetTransctions,
+];
